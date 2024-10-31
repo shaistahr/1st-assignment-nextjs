@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+
+    background-color: #11641879;
+  background-image: linear-gradient(43deg, #ac7c99af 0%, #bae64180 46%, #0e729183 100%);
+  
+  }
+
+  /* Neon Button Glow */
+.neon-button {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .neon-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 255, 20, 0.4); /* Adjust color to match neon glow */
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.7;
+  }
+  
+  /* Sparkling Cursor */
+  body {
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="%23FF10F0"/><circle cx="12" cy="12" r="6" fill="transparent" stroke="%23FF10F0" stroke-width="2" opacity="0.6"/><circle cx="12" cy="12" r="8" fill="transparent" stroke="%23FF10F0" stroke-width="1" opacity="0.3"/></svg>'), auto;
+  }
+  
